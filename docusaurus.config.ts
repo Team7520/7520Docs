@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: '7520Docs',
+  tagline: 'The meeting place for all things 7520 and FRC!',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -40,13 +40,6 @@ const config: Config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -58,25 +51,24 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: '7520Docs',
       logo: {
-        alt: 'My Site Logo',
+        alt: '7520Docs Logo',
         src: 'img/logo.svg',
       },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
+        items: [
+            {
+                type: 'doc',
+                position: 'left',
+                label: 'Docs',
+                docId: 'welcome',
+            },
+            {
+                href: 'https://github.com/team7520/7520Docs',
+                className: 'header-github-link',
+                position: 'right',
+            },
+        ],
     },
     footer: {
       style: 'dark',
